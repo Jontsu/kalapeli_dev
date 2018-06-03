@@ -1,0 +1,27 @@
+doctype html
+
+link(rel='stylesheet', href='/style.css')
+
+
+html(lang="en")
+  head
+    title kalapeli
+    meta(charset="UTF-8")
+body 
+  .bgimg
+    //.wrapper(input type='text', name='ok', value='ok')
+    input.wrapper(type='submit', value='Start fishing!', onClick='move()')
+    
+    //form(method='post', action='/')
+    //label=(for='ourid') Give your username
+    //input(name='ourname', type='text', id='ourid', placeholder='our placeholder')
+    //center jotain
+    //input(type="submit" value="Let's start fishing!" )
+    //img(src='/images/base.jpg')
+
+script.
+  function move() {
+    window.location.href = '/newpage'
+  }
+
+block content
