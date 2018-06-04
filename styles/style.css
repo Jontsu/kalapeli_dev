@@ -7,13 +7,20 @@ body {
   background-image: url('/images/base.jpg');
   height: 5800px;
   width: 100%;
-  }
+}
+.gameimg {
+  background-image: url('/images/game.jpg');
+  height: 1080px;
+  width: 100%;
+}
 .wrapper {
   position: absolute;
   margin-left: 40%;
   top: 5700px;
   width: 400px;
   height:50px;
-  }
-  //
-    border:2px solid black;
+}
+.wrapper:hover {
+  background: black;
+  color: white;
+}

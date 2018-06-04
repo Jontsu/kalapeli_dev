@@ -14,7 +14,7 @@ app.get('/', function (req, res) {
   res.render('index')
 })
 
-app.get('/newpage', function(req, res){
+app.get('/gamepage', function(req, res){
   res.render('game', {
     title: 'Home'
   });
