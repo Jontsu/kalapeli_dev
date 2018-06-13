@@ -9,14 +9,21 @@ app.set('views', __dirname + '/views');
 app.use(express.static('public'))
 app.use(express.static('styles'))
 app.use(express.static('destination'))
+app.use(express.static('scripts'))
 
-app.get('/', function (req, res) {
+app.get('/', function (req, res){
   res.render('index')
 })
 
 app.get('/gamepage', function(req, res){
   res.render('game', {
     title: 'Home'
+  });
+});
+
+app.get('/testpage', function(req, res){
+  res.render('testpage', {
+    title: 'Demo'
   });
 });
 

@@ -9,7 +9,6 @@ body {
   margin-right: auto;
   width: 30%;
   height: 80px;
-
 }
 .bgimg {
   background-image: url('/images/base.jpg');
@@ -31,4 +30,45 @@ body {
 .wrapper:hover {
   background: black;
   color: white;
+}
+.slider {
+  width: 300px;
+}
+.slider input {
+  appearance: none;
+  -webkit-appearance; none;
+  width: 300px;
+  height: 6px;
+  border-radius: 2px;
+  border: 1px solid #ddd;
+  box-shadow: 0 1px 1px #ddd;
+}
+.slider input::-webkit-slider-thumb {
+  appearance: none;
+  webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 2px #999;
+}
+.timeline {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+}
+.timeline li {
+  width: 10%;
+  float: left;
+  height: 10px;
+  position: relative;
+}
+.timeline li:after {
+  content: '';
+  width: 1px;
+  height: 10px;
+  background-color: #999;
+  position: absolute;
 }
